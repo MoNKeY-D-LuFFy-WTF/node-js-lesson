@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Express user</title>
+  </head>
+  <body>
+    <h1>Cтраница пользователя <%= username%></h1>
+    <ul>
+      <li>ID <span><%= username%></span></li>
+      <li>USERNAME <span><%= id%></span></li>
+      <li>
+        HoBBIES <% hobbies.forEach((hobby) => {%>
+        <span><br><%= hobby %></span>
+        <% })%>
+      </li>
+    </ul>
+  </body>
+</html>
